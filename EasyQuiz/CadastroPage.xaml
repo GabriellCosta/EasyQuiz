@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="EasyQuiz.CadastroPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EasyQuiz"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Padding="30" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBox x:Name="pergunta"  HorizontalAlignment="Center" TextWrapping="Wrap"
+                 VerticalAlignment="Top" PlaceholderText="Qual a pergunta do Quiz?" />
+        <ComboBox HorizontalAlignment="Center"/>
+        <Grid Margin="0,40,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>            
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+            <TextBox Width="AUTO" x:Name="resposta1" Grid.Row="0" HorizontalAlignment="Center"  TextWrapping="Wrap"  VerticalAlignment="Top" PlaceholderText="Qual a resposta 1?"/>
+            <TextBox x:Name="resposta2" Grid.Row="1" HorizontalAlignment="Center"  TextWrapping="Wrap"  VerticalAlignment="Top" PlaceholderText="Qual a resposta 2?"/>
+            <TextBox x:Name="resposta3" Grid.Row="2" HorizontalAlignment="Center"  TextWrapping="Wrap"  VerticalAlignment="Top" PlaceholderText="Qual a resposta 3?"/>
+            <TextBox x:Name="resposta4" Grid.Row="3" HorizontalAlignment="Center"  TextWrapping="Wrap"  VerticalAlignment="Top" PlaceholderText="Qual a resposta 4?"/>
+
+            <RadioButton Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center"/>
+            <RadioButton Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"/>
+            <RadioButton Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"/>
+            <RadioButton Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center"/>
+        </Grid>
+        <Button Content="Salvar" Width="200" HorizontalAlignment="Center" Margin="0,30,0,30"/>
+        <Button HorizontalAlignment="Center" Content="Cancelar" Width="200"/>
+    </StackPanel>
+</Page>

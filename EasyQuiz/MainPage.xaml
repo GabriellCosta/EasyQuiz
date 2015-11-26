@@ -6,8 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel VerticalAlignment="Center"  HorizontalAlignment="center" >
 
+        <Button Content="Cadastrar" Width="300" Margin="10" />
+        
+        <Button Content="Iniciar Quiz" Width="300" Margin="10"/>
+
+    </StackPanel>
     </Grid>
 </Page>
